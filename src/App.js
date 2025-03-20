@@ -1,23 +1,41 @@
 import logo from './logo.svg';
-import './App.css';
+import ColorPicker from '@rc-component/color-picker';
+import '@rc-component/color-picker/assets/index.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <section className='banner'>
+     <div className='container'>
+      <div className='banner-box'>
+        jjnjj
+      </div>
+     </div>
+
+    </section>
+    <section className='banner-items container'>
+    <form>
+    <div className='form-group'>
+    <ColorPicker />
+    <label>Pick background color</label>
+    
+    </div>
+     <div className='form-group'>
+    <label>Upload an Image</label>
+    <input />
+    </div>
+    <div className='form-group'>
+    <label>Heading</label>
+    <input />
+    </div>
+
+    <div className='form-group'>
+    <label>Text</label>
+    <input />
+    </div>
+   
+    </form>
+    </section>
     </div>
   );
 }
